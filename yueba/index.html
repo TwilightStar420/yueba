@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>月芭市教育集成中心</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+</head>
+<body>
+    <!-- 粒子背景容器 -->
+    <div id="particles-js"></div>
+    
+    <!-- 模式切换按钮 -->
+    <button id="theme-toggle" class="theme-toggle">🌙</button>
+    
+    <!-- 主容器 -->
+    <div class="container">
+        <!-- 头部 -->
+        <header class="header">
+            <div class="logo-container">
+                <img src="https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=modern%20blue%20and%20silver%20logo%20with%20abstract%20design%2C%20glowing%20effect%2C%20dark%20background&image_size=square_hd" alt="月芭市教育集成中心" class="logo">
+                <h1 class="title">月芭市教育集成中心</h1>
+                <!-- 云朵元素 -->
+                <div class="cloud" id="cloud"></div>
+            </div>
+            <p class="subtitle">这里是月芭市，世界上一流的教育中心，我们拥有最先进的教育理念和教育模式，致力于学生的全面发展</p>
+        </header>
+        
+        <!-- 游戏区域 -->
+        <div class="game-container">
+            <canvas id="gameCanvas" class="game-canvas"></canvas>
+        </div>
+        
+        <!-- 功能模块 -->
+        <div class="modules">
+            <div class="module" data-target="education">
+                <h3>教育理念</h3>
+                <p>探索我们的教育理念和方法</p>
+            </div>
+            <div class="module" data-target="cooperation">
+                <h3>校企合作</h3>
+                <p>了解我们与企业的合作项目</p>
+            </div>
+            <div class="module" data-target="search">
+                <h3>学校查询</h3>
+                <p>查找月芭市的学校信息</p>
+            </div>
+            <div class="module" data-target="news">
+                <h3>学校新闻板</h3>
+                <p>浏览最新的教育新闻</p>
+            </div>
+            <div class="module" data-target="contact">
+                <h3>联系我们</h3>
+                <p>获取联系方式和地址</p>
+            </div>
+            <div class="module" data-target="achievements">
+                <h3>教育成就</h3>
+                <p>查看我们的教育成果</p>
+            </div>
+        </div>
+        
+        <!-- 内容区域 -->
+        <div class="content" id="content">
+            <div class="content-section active" id="education">
+                <h2>教育理念</h2>
+                <p>我们的教育理念基于全面发展的原则，注重培养学生的创新能力、批判性思维和实践技能。我们相信每个学生都有独特的潜力，通过个性化的教育方法，帮助他们实现自身价值。</p>
+                <p>我们采用先进的教育技术和教学方法，创造互动性强、充满活力的学习环境，激发学生的学习兴趣和探索精神。</p>
+            </div>
+            <div class="content-section" id="cooperation">
+                <h2>校企合作</h2>
+                <p>我们与众多知名企业建立了紧密的合作关系，为学生提供实习机会和职业发展通道。通过校企合作，学生能够将理论知识与实践相结合，提前适应职场环境。</p>
+                <p>我们的合作伙伴包括科技公司、金融机构、医疗机构等多个领域的领先企业，为学生提供多样化的实践机会。</p>
+            </div>
+            <div class="content-section" id="search">
+                <h2>学校查询</h2>
+                <p>月芭市拥有多所优质学校，涵盖从幼儿园到高等教育的各个阶段。您可以通过我们的学校查询系统，了解各学校的特色、设施和招生信息。</p>
+                <div class="search-form">
+                    <input type="text" placeholder="输入学校名称">
+                    <button>搜索</button>
+                </div>
+            </div>
+            <div class="content-section" id="news">
+                <h2>学校新闻板</h2>
+                <div class="news-item">
+                    <h3>月芭市教育集成中心举办科技创新大赛</h3>
+                    <p>近日，月芭市教育集成中心成功举办了年度科技创新大赛，来自全市各学校的学生展示了他们的创新项目。</p>
+                </div>
+                <div class="news-item">
+                    <h3>新一批智能教学设备投入使用</h3>
+                    <p>为提升教学质量，月芭市教育集成中心引入了最新的智能教学设备，为教师和学生提供更加先进的教学工具。</p>
+                </div>
+                <div class="news-item">
+                    <h3>国际教育交流项目启动</h3>
+                    <p>月芭市教育集成中心与多个国家的教育机构建立了合作关系，启动了国际教育交流项目，为学生提供海外学习机会。</p>
+                </div>
+            </div>
+            <div class="content-section" id="contact">
+                <h2>联系我们</h2>
+                <p>地址：月芭市教育大道123号</p>
+                <p>电话：0123-4567890</p>
+                <p>邮箱：info@yueba-education.com</p>
+                <div class="contact-form">
+                    <h3>发送消息</h3>
+                    <input type="text" placeholder="您的姓名">
+                    <input type="email" placeholder="您的邮箱">
+                    <textarea placeholder="您的消息"></textarea>
+                    <button>发送</button>
+                </div>
+            </div>
+            <div class="content-section" id="achievements">
+                <h2>教育成就</h2>
+                <p>多年来，月芭市教育集成中心取得了显著的教育成就，培养了大量优秀人才。我们的学生在各类比赛和考试中表现优异，赢得了广泛的认可。</p>
+                <div class="achievement-list">
+                    <div class="achievement-item">
+                        <h3>全国学科竞赛一等奖</h3>
+                        <p>连续五年获得全国学科竞赛团体一等奖</p>
+                    </div>
+                    <div class="achievement-item">
+                        <h3>教育创新奖</h3>
+                        <p>获得国家教育创新奖，表彰我们的教育模式创新</p>
+                    </div>
+                    <div class="achievement-item">
+                        <h3>国际交流成果</h3>
+                        <p>与20多个国家建立了教育交流合作关系</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
